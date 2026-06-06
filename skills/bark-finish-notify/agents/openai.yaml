@@ -1,0 +1,7 @@
+interface:
+  display_name: "Bark Finish Notify"
+  short_description: "Send Bark push on task completion"
+  default_prompt: "Use $bark-finish-notify to send a Bark push when the task is complete."
+
+policy:
+  allow_implicit_invocation: true
