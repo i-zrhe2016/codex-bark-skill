@@ -9,6 +9,7 @@ import os
 import sys
 import urllib.error
 import urllib.request
+from pathlib import Path
 
 DEFAULT_ENDPOINT = "https://api.day.app/j32eBocVfwx6kvf8xr452K/"
 
@@ -57,7 +58,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--project",
-        default="bark",
+        default=Path.cwd().name,
         help="Project name included in the notification body.",
     )
     parser.add_argument(
